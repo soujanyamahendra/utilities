@@ -11,6 +11,7 @@ export NODE=192.168.22.18
 export BASE_URL=http://192.168.22.24:8000/share
 python3 -m http.server &
 export REPO_URL=https://github.com/soujanyamahendra/treasuremap.git
+export REPO_BRANCH=master
 cat objects.yaml.env | envsubst > objects.yaml
 cat TF_blueprint.yaml.env | envsubst > TF_blueprint.yaml
 export PATH=$PATH:$HOME/api-server/scripts
